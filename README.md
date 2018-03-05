@@ -1,6 +1,6 @@
-# vueapp
+# VueJs App
 
-> A Vue.js project
+> A Vue.js personal project
 
 ## Build Setup
 
