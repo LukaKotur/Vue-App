@@ -90,7 +90,6 @@ export const store = new Vuex.Store({
         .catch((err) => {
           console.log(err)
         })
-
     },
     signUserUp({commit}, payload) {
       commit('setLoading', true);
