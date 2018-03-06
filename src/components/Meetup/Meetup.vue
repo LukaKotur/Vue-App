@@ -30,12 +30,12 @@
               <app-edit-meetup-time-dialog :meetup="meetup" v-if="userIsCreator"></app-edit-meetup-time-dialog>
             </div>
             <div>{{meetup.description}}</div>
-
-
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn dark class="blue darken-1">Register</v-btn>
+            <app-register-dialog :meetupId="meetup.id"
+                                 v-if="userIsAuthenticated && !userIsCreator"
+            ></app-register-dialog>
           </v-card-actions>
         </v-card>
       </v-flex>
